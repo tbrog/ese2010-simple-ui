@@ -1,0 +1,1481 @@
+05 Okt 2010 19:08:40,038 INFO  ~ Starting /Users/uni/Desktop/qa
+05 Okt 2010 19:08:40,043 INFO  ~ Module secure is available (/Users/uni/play-1.0.3.2/modules/secure)
+05 Okt 2010 19:08:41,324 INFO  ~ 
+05 Okt 2010 19:08:41,324 INFO  ~ Go to http://localhost:9000/@tests to run the tests
+05 Okt 2010 19:08:41,324 INFO  ~ 
+05 Okt 2010 19:08:41,324 WARN  ~ You're running Play! in DEV mode
+05 Okt 2010 19:08:41,467 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+05 Okt 2010 19:08:58,801 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
+05 Okt 2010 19:08:58,923 INFO  ~ Application 'qa' is now started !
+05 Okt 2010 19:11:43,875 ERROR ~ 
+
+@643njl410
+Internal Server Error (500) for request GET /@tests/init
+
+Compilation error (In /app/controllers/UserControll.java around line 18)
+The file /app/controllers/UserControll.java could not be compiled. Error raised is : Unreachable code
+
+play.exceptions.JavaCompilationException: Unreachable code
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:11:59,257 ERROR ~ 
+
+@643njl411
+Internal Server Error (500) for request GET /@tests/end?result=passed
+
+Compilation error (In /app/controllers/UserControll.java around line 18)
+The file /app/controllers/UserControll.java could not be compiled. Error raised is : Unreachable code
+
+play.exceptions.JavaCompilationException: Unreachable code
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:19:52,346 ERROR ~ 
+
+@643njl414
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action UserControll.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:24:10,714 ERROR ~ 
+
+@643njl415
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 19:24:47,010 ERROR ~ 
+
+@643njl417
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:25:30,871 ERROR ~ 
+
+@643njl419
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:25:33,637 ERROR ~ 
+
+@643njl41b
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:25:42,899 ERROR ~ 
+
+@643njl41d
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:22,360 ERROR ~ 
+
+@643njl41f
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:22,916 ERROR ~ 
+
+@643njl41h
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:23,314 ERROR ~ 
+
+@643njl41j
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:23,503 ERROR ~ 
+
+@643njl41l
+Internal Server Error (500) for request GET /usercontroll/profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:26,999 ERROR ~ 
+
+@643njl41o
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:36,138 ERROR ~ 
+
+@643njl421
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:26:49,433 ERROR ~ 
+
+@643njl424
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:27:15,729 ERROR ~ 
+
+@643njl427
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:27:17,996 ERROR ~ 
+
+@643njl42a
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:43:02,020 ERROR ~ 
+
+@643njl42d
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 10)
+No route able to invoke action Application.profile was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:43:53,589 ERROR ~ 
+
+@643njl42f
+Internal Server Error (500) for request GET /profile
+
+Template not found (In /app/controllers/UserControll.java around line 32)
+The template UserControll/profile.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : UserControll/profile.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 20:07:51,672 ERROR ~ 
+
+@643njl42g
+Internal Server Error (500) for request GET /
+
+Java exception (In /app/controllers/Application.java around line 15)
+NoSuchMethodError occured : models.KnowledgeBase.getQuestions()Ljava/util/List;
+
+play.exceptions.JavaExecutionException: models.KnowledgeBase.getQuestions()Ljava/util/List;
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.KnowledgeBase.getQuestions()Ljava/util/List;
+	at controllers.Application.index(Application.java:15)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 20:08:49,771 ERROR ~ 
+
+@643njl42h
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 21:24:59,949 ERROR ~ 
+
+@643njl42i
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 21:25:19,479 ERROR ~ 
+
+@643njl42j
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 42)
+Execution error occured in template /app/views/Application/index.html. Exception raised was MissingPropertyException : No such property: question for class: models.Question.
+
+play.exceptions.TemplateExecutionException: No such property: question for class: models.Question
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: groovy.lang.MissingPropertyException: No such property: question for class: models.Question
+	at /app/views/Application/index.html.(line:42)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 21:25:50,018 ERROR ~ 
+
+@643njl42k
+Internal Server Error (500) for request GET /
+
+Java exception (In /app/controllers/Application.java around line 18)
+RuntimeException occured : java.lang.OutOfMemoryError: Java heap space
+
+play.exceptions.JavaExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.lang.OutOfMemoryError: Java heap space
+	at play.templates.Template.throwException(Template.java:303)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2882)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	at java.lang.StringBuilder.append(StringBuilder.java:119)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:53)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+05 Okt 2010 21:25:59,719 ERROR ~ 
+
+@643njl42l
+Internal Server Error (500) for request GET /
+
+Java exception (In /app/controllers/Application.java around line 18)
+RuntimeException occured : java.lang.OutOfMemoryError: Java heap space
+
+play.exceptions.JavaExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.lang.OutOfMemoryError: Java heap space
+	at play.templates.Template.throwException(Template.java:303)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2882)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	at java.lang.StringBuilder.append(StringBuilder.java:119)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:53)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+05 Okt 2010 21:26:10,305 ERROR ~ 
+
+@643njl42m
+Internal Server Error (500) for request GET /
+
+Java exception (In /app/controllers/Application.java around line 18)
+RuntimeException occured : java.lang.OutOfMemoryError: Java heap space
+
+play.exceptions.JavaExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.lang.OutOfMemoryError: Java heap space
+	at play.templates.Template.throwException(Template.java:303)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2882)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	at java.lang.StringBuilder.append(StringBuilder.java:119)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:53)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:47)
+	at play.data.binding.Unbinder.unBind(Unbinder.java:59)
+05 Okt 2010 21:30:51,596 ERROR ~ 
+
+@643njl42n
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 21:31:11,172 ERROR ~ 
+
+@643njl42p
+Internal Server Error (500) for request GET /application/upvote?ID=0
+
+Template not found (In /app/controllers/Application.java around line 45)
+The template Application/upVote.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Application/upVote.html
+	at play.mvc.Controller.renderTemplate(Controller.java:496)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.upVote(Application.java:45)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:33:03,490 ERROR ~ 
+
+@643njl430
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:18)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 21:35:50,511 ERROR ~ 
+
+@643njl431
+Internal Server Error (500) for request GET /profile
+
+Template compilation error (In /app/views/UserControll/profile.html around line 2)
+The template /app/views/UserControll/profile.html does not compile : #{set} is not closed.
+
+play.exceptions.TemplateCompilationException: #{set} is not closed.
+	at play.templates.TemplateCompiler$Compiler.hop(TemplateCompiler.java:187)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:46)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:44)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:95)
+	at play.mvc.Controller.renderTemplate(Controller.java:488)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:36:06,762 ERROR ~ 
+
+@643njl432
+Internal Server Error (500) for request GET /profile
+
+Template compilation error (In /app/views/UserControll/profile.html around line 2)
+The template /app/views/UserControll/profile.html does not compile : #{set} is not closed.
+
+play.exceptions.TemplateCompilationException: #{set} is not closed.
+	at play.templates.TemplateCompiler$Compiler.hop(TemplateCompiler.java:187)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:46)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:44)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:95)
+	at play.mvc.Controller.renderTemplate(Controller.java:488)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.UserControll.profile(UserControll.java:32)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:44:04,579 ERROR ~ 
+
+@643njl433
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable question may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable question may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:44:56,912 ERROR ~ 
+
+@643njl434
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:44:58,401 ERROR ~ 
+
+@643njl435
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:44:59,249 ERROR ~ 
+
+@643njl436
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:45:58,299 ERROR ~ 
+
+@643njl437
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:45:59,401 ERROR ~ 
+
+@643njl438
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:46:00,149 ERROR ~ 
+
+@643njl439
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:46:37,821 ERROR ~ 
+
+@643njl43a
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 21:47:03,170 ERROR ~ 
+
+@643njl43b
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 47)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 22:20:34,573 ERROR ~ 
+
+@643njl43c
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 22:20:51,998 ERROR ~ 
+
+@643njl43d
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 46)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable answers may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable answers may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 22:21:14,283 ERROR ~ 
+
+@643njl43e
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 22:25:44,460 ERROR ~ 
+
+@643njl43f
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template execution error (In /app/views/Application/questionDetail.html around line 15)
+Execution error occured in template /app/views/Application/questionDetail.html. Exception raised was NullPointerException : Cannot get property 'contents' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'contents' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:46)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'contents' on null object
+	at /app/views/Application/questionDetail.html.(line:15)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 22:26:09,149 ERROR ~ 
+
+@643njl43g
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template execution error (In /app/views/Application/questionDetail.html around line 15)
+Execution error occured in template /app/views/Application/questionDetail.html. Exception raised was NullPointerException : Cannot get property 'contents' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'contents' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:46)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'contents' on null object
+	at /app/views/Application/questionDetail.html.(line:15)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 22:27:02,380 ERROR ~ 
+
+@643njl43h
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template execution error (In /app/views/Application/questionDetail.html around line 19)
+Execution error occured in template /app/views/Application/questionDetail.html. Exception raised was NullPointerException : Cannot get property 'timestamp' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'timestamp' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:46)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'timestamp' on null object
+	at /app/views/Application/questionDetail.html.(line:19)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 22:27:08,250 ERROR ~ 
+
+@643njl43i
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template execution error (In /app/views/Application/questionDetail.html around line 19)
+Execution error occured in template /app/views/Application/questionDetail.html. Exception raised was NullPointerException : Cannot get property 'timestamp' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'timestamp' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:46)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'timestamp' on null object
+	at /app/views/Application/questionDetail.html.(line:19)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 22:53:04,834 ERROR ~ 
+
+@643njl43l
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 45)
+No route able to invoke action Application.downVoter was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 22:56:20,351 ERROR ~ 
+
+@643njl43o
+Internal Server Error (500) for request GET /application/questiondetail?ID=0
+
+No route found (In /app/views/Application/questionDetail.html around line 28)
+No route able to invoke action Application.reply was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:46)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:02:22,249 ERROR ~ 
+
+@643njl43p
+Internal Server Error (500) for request GET /application/questiondetail?ID=0
+
+Compilation error (In /app/controllers/Application.java around line 74)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert "}" to complete ClassBody
+
+play.exceptions.JavaCompilationException: Syntax error, insert "}" to complete ClassBody
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:04:06,313 ERROR ~ 
+
+@643njl440
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:10:27,603 ERROR ~ 
+
+@643njl441
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template execution error (In /app/views/Application/questionDetail.html around line 28)
+Execution error occured in template /app/views/Application/questionDetail.html. Exception raised was NullPointerException : Cannot get property 'ID' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'ID' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:44)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'ID' on null object
+	at /app/views/Application/questionDetail.html.(line:28)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:21:17,068 ERROR ~ 
+
+@643njl442
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Template compilation error (In /app/views/Application/questionDetail.html around line 28)
+The template /app/views/Application/questionDetail.html does not compile : unexpected token: ) 
+
+play.exceptions.TemplateCompilationException: unexpected token: ) 
+	at play.templates.Template.compile(Template.java:203)
+	at play.templates.Template.render(Template.java:214)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.questionDetail(Application.java:44)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:22:36,656 ERROR ~ 
+
+@643njl443
+Internal Server Error (500) for request GET /application/questiondetail?ID=1
+
+Compilation error (In /app/controllers/Application.java around line 44)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The local variable question may not have been initialized
+
+play.exceptions.JavaCompilationException: The local variable question may not have been initialized
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:31:32,181 ERROR ~ 
+
+@643njl444
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:31:37,886 ERROR ~ 
+
+@643njl445
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:31:52,789 ERROR ~ 
+
+@643njl446
+Internal Server Error (500) for request GET /application/reply?answer=as
+
+Java exception (In /app/controllers/Application.java around line 68)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:68)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:33:41,208 ERROR ~ 
+
+@643njl447
+Internal Server Error (500) for request GET /application/reply?answer=as
+
+Compilation error (In /app/controllers/Application.java around line 68)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Syntax error, insert ";" to complete BlockStatements
+
+play.exceptions.JavaCompilationException: Syntax error, insert ";" to complete BlockStatements
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:398)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:35:03,914 ERROR ~ 
+
+@643njl448
+Internal Server Error (500) for request GET /application/questiondetail?ID=0
+
+Compilation error (In /app/controllers/Application.java around line 70)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The method questionDetail(int) in the type Application is not applicable for the arguments ()
+
+play.exceptions.JavaCompilationException: The method questionDetail(int) in the type Application is not applicable for the arguments ()
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 23:35:56,513 ERROR ~ 
+
+@643njl449
+Internal Server Error (500) for request GET /application/reply?answer=
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:38:00,986 ERROR ~ 
+
+@643njl44a
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:38:07,506 ERROR ~ 
+
+@643njl44b
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:39:45,645 ERROR ~ 
+
+@643njl44c
+Internal Server Error (500) for request GET /application/reply?answer=n
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:40:17,494 ERROR ~ 
+
+@643njl44d
+Internal Server Error (500) for request GET /application/reply?answer=dd
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:40:41,483 ERROR ~ 
+
+@643njl44e
+Internal Server Error (500) for request GET /application/reply?answer=dd
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:40:42,461 ERROR ~ 
+
+@643njl44f
+Internal Server Error (500) for request GET /application/reply?answer=dd
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:40:44,754 ERROR ~ 
+
+@643njl44g
+Internal Server Error (500) for request GET /application/reply?answer=dd
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:42:49,356 ERROR ~ 
+
+@643njl44h
+Internal Server Error (500) for request GET /application/reply?answer=d
+
+Java exception (In /app/controllers/Application.java around line 70)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:44:46,412 ERROR ~ 
+
+@643njl44i
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 10)
+Execution error occured in template /app/views/Application/index.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.index(Application.java:19)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Application/index.html.(line:10)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 23:47:59,230 ERROR ~ 
+
+@643njl44j
+Internal Server Error (500) for request GET /application/reply?answer=dddss
+
+Java exception (In /app/controllers/Application.java around line 71)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:71)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:48:53,257 ERROR ~ 
+
+@643njl44k
+Internal Server Error (500) for request GET /application/reply?answer=dddss
+
+Java exception (In /app/controllers/Application.java around line 72)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:72)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:48:56,467 ERROR ~ 
+
+@643njl44l
+Internal Server Error (500) for request GET /application/reply?answer=dddss
+
+Java exception (In /app/controllers/Application.java around line 72)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:72)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:49:04,845 ERROR ~ 
+
+@643njl44m
+Internal Server Error (500) for request GET /question?question=s
+
+Java exception (In /app/controllers/Application.java around line 23)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.enterQuestion(Application.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:50:03,419 ERROR ~ 
+
+@643njl44n
+Internal Server Error (500) for request GET /application/reply?answer=ss
+
+Java exception (In /app/controllers/Application.java around line 72)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.reply(Application.java:72)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 23:51:48,854 ERROR ~ 
+
+@643njl44o
+Internal Server Error (500) for request GET /application/reply?answer=ss
+
+Java exception (In /app/models/Answer.java around line 10)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at models.Answer.<init>(Answer.java:10)
+	at controllers.Application.reply(Application.java:70)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more

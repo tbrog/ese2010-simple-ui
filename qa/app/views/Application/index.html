@@ -1,0 +1,56 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if flash.error}
+    <p style="color:#c00">
+        ${flash.error}
+    </p>
+#{/if}
+<p style ="text-align: right">
+		Logged in as: <a href="@{UserControll.profile()}">${user.name}</a>
+                    <a href="@{Secure.logout()}">Log out</a>
+                
+    	</p>
+    	<h1>
+    		<p style="text-align: center">
+    			Welcome to the knowledge base!!!
+    		</p>
+    	</h1>
+    	<br></br>
+    <form action="@{Application.enterQuestion()}" method="GET">
+    <input type="text" name="question" /> 
+    <input type="submit" value="Enter a question!" />
+</form> 
+
+    
+    	<hr>	
+    	</hr>
+#{ifnot questions}
+	<p>
+		No questions available!
+	</p>
+#{/ifnot}
+ 
+    
+    		#{list items:questions, as: 'Questionses'}
+    		
+    		<li>
+    			<h3>
+    			<a href="@{Application.questionDetail(Questionses.ID)}"> ${Questionses.contents}</a>
+    			</h3> 
+    			
+    			Vote: ${Questionses.vote}
+    			Author: ${Questionses.owner.name}
+    			${Questionses.timestamp}
+    			
+    			<a href="@{Application.upVote(Questionses.ID)}"> Upvote</a>
+    			<a href="@{Application.downVote(Questionses.ID)}"> Downvote</a>
+    			<a href="@{Application.questionDetail(Questionses.ID)}">Reply</a>
+    		</li>
+    		<br></br><br></br>
+    		#{/list}
+    		<hr>	
+    		</hr>
+    		<br></br>
+    		
+    		

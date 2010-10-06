@@ -1,0 +1,35 @@
+#{extends 'main.html' /}
+#{set title:'Question' /}
+
+
+<h3>
+	<p style="text-align: center"> ${question}</p>
+</h3> 
+
+<hr></hr>
+
+#{list items:answers, as: 'Answerses'}
+    		
+    		<li>
+    			<h5>
+    			${Answerses.contents}
+    			</h5> 
+    			
+    			Vote: ${Answerses.vote}<br></br>
+    			Date: ${Answerses.timestamp}<br></br>
+    			
+    			<a href="@{Application.upVote(Answerses.ID)}"> Upvote</a><br></br>
+    			<a href="@{Application.downVote(Answerses.ID)}"> Downvote</a><br></br>
+    			
+    		</li>
+    		<br></br><br></br>
+    		#{/list}
+    		<hr></hr>
+    		<form action="@{Application.reply(answer, ques)}" method="GET">
+    		<input type="text" name="answer" /> 
+    		<input type="submit" value="Reply" />
+    		</form>
+    		
+    		<br>
+    		</br>
+    		<a href="@{Application.index}">Back</a>

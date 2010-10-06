@@ -1,0 +1,25 @@
+
+#{set title:'Register' /}
+
+<head><title>#{get 'title' /}</title></head>
+
+
+
+
+<h1> 
+	<p  style="text-align: center">Registration
+	</p>
+</h1>
+
+<form action="@{Application.register()}" method="GET">
+   Username: <input type="text" name="name" /> 
+    <input type="submit" value="Submit!" />
+</form>
+<br>
+<hr></hr>
+</br>
+
+<p  style="text-align: center">
+		<a href="@{Application.index()}">Back</a>
+</p>
+

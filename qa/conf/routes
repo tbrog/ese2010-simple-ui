@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+GET     /question                               Application.enterQuestion
+GET		/profile								UserControll.profile
+GET		/questionDetail/{ID}		            Application.questionDetail
+GET		/questionDetail							Application.reply
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
+
+# Import Secure routes
+*      /                						module:secure
